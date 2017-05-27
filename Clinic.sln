@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinic", "Clinic\Clinic.csproj", "{92460955-C1C0-45E4-BC2C-0023BC75C1C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinic.Domain", "Clinic.Domain\Clinic.Domain.csproj", "{012B454E-B46F-4257-AD7A-4A98EF763192}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinic.ViewModel", "Clinic.ViewModel\Clinic.ViewModel.csproj", "{3A75A68A-72EC-4C51-8616-8B06FFBBE80C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinic.Domain.Model", "Clinic.Domain.Model\Clinic.Domain.Model.csproj", "{C4BF6485-339D-4DD6-AAF3-D5431512C408}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinic.Enums", "Clinic.Enums\Clinic.Enums.csproj", "{10CF20F9-C091-457B-8351-1073205BB422}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinic.Helpers", "Clinic.Helpers\Clinic.Helpers.csproj", "{F7DED6C9-84FD-4B2A-8EF3-C9B44FEFBB03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinic.Web", "Clinic.Web\Clinic.Web.csproj", "{54EA4D6B-422A-4E8D-A938-81DCEA9D96B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92460955-C1C0-45E4-BC2C-0023BC75C1C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92460955-C1C0-45E4-BC2C-0023BC75C1C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92460955-C1C0-45E4-BC2C-0023BC75C1C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92460955-C1C0-45E4-BC2C-0023BC75C1C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{012B454E-B46F-4257-AD7A-4A98EF763192}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{012B454E-B46F-4257-AD7A-4A98EF763192}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{012B454E-B46F-4257-AD7A-4A98EF763192}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{012B454E-B46F-4257-AD7A-4A98EF763192}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A75A68A-72EC-4C51-8616-8B06FFBBE80C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A75A68A-72EC-4C51-8616-8B06FFBBE80C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A75A68A-72EC-4C51-8616-8B06FFBBE80C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A75A68A-72EC-4C51-8616-8B06FFBBE80C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4BF6485-339D-4DD6-AAF3-D5431512C408}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4BF6485-339D-4DD6-AAF3-D5431512C408}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4BF6485-339D-4DD6-AAF3-D5431512C408}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4BF6485-339D-4DD6-AAF3-D5431512C408}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10CF20F9-C091-457B-8351-1073205BB422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10CF20F9-C091-457B-8351-1073205BB422}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10CF20F9-C091-457B-8351-1073205BB422}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10CF20F9-C091-457B-8351-1073205BB422}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7DED6C9-84FD-4B2A-8EF3-C9B44FEFBB03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7DED6C9-84FD-4B2A-8EF3-C9B44FEFBB03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7DED6C9-84FD-4B2A-8EF3-C9B44FEFBB03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7DED6C9-84FD-4B2A-8EF3-C9B44FEFBB03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54EA4D6B-422A-4E8D-A938-81DCEA9D96B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54EA4D6B-422A-4E8D-A938-81DCEA9D96B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54EA4D6B-422A-4E8D-A938-81DCEA9D96B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54EA4D6B-422A-4E8D-A938-81DCEA9D96B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
