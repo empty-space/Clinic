@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
+using Clinic.Domain.Model;
 
 namespace Clinic.Web
 {
@@ -29,6 +31,12 @@ namespace Clinic.Web
         {
             // Add framework services.
             services.AddMvc();
+
+            var connection = @"Data Source=DESKTOP-HSIM5BD\SQLEXPRESS;Initial Catalog=Clinic_db;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            //@"Server=(localdb)\mssqllocaldb;Database=EFGetStarted.AspNetCore.NewDb;Trusted_Connection=True;";
+            
+            services.AddDbContext<ClinicDbContext>(options => options.UseSqlServer(connection));
+            services.AddScoped<IClinicDbContext, ClinicDbContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
