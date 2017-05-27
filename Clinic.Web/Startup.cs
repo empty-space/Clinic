@@ -9,6 +9,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using Clinic.Domain.Model;
+using Clinic.Domain.DAL;
+using Clinic.Web.Extensions;
+using Clinic.Domain.Commands.Base;
+using System.Reflection;
 
 namespace Clinic.Web
 {
@@ -32,11 +36,13 @@ namespace Clinic.Web
             // Add framework services.
             services.AddMvc();
 
-            var connection = @"Data Source=DESKTOP-HSIM5BD\SQLEXPRESS;Initial Catalog=Clinic_db;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-            //@"Server=(localdb)\mssqllocaldb;Database=EFGetStarted.AspNetCore.NewDb;Trusted_Connection=True;";
+            var connection = @"Data Source=DESKTOP-HSIM5BD\SQLEXPRESS;Initial Catalog=Clinic_db;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";            
             
             services.AddDbContext<ClinicDbContext>(options => options.UseSqlServer(connection));
             services.AddScoped<IClinicDbContext, ClinicDbContext>();
+
+            // Register commands of 1 assembly
+            services.RegisterCommands(typeof(BaseCommand).GetTypeInfo().Assembly);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -61,8 +67,9 @@ namespace Clinic.Web
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
-            });
+                    //template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Example}/{action=UserList}/{id?}");
+        });
         }
     }
 }

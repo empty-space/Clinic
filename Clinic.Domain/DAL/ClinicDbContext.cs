@@ -1,14 +1,15 @@
-namespace Clinic.Domain.Model
+namespace Clinic.Domain.DAL
 {
     using System;
     using Microsoft.EntityFrameworkCore;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
+    using Clinic.Domain.Model;
 
     public partial class ClinicDbContext : DbContext, IClinicDbContext
     {
         public ClinicDbContext(DbContextOptions<ClinicDbContext> options)
-            : base(options)//"name=Model12"
+            : base(options)
         {
         }
 

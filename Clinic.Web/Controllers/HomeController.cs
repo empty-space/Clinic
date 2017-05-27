@@ -4,19 +4,15 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Clinic.Domain.Model;
+using Clinic.Domain.DAL;
 
 namespace Clinic.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IClinicDbContext _context;
-        public HomeController(IClinicDbContext context)
-        {
-            _context = context;
-        }
+        
         public IActionResult Index()
         {
-            var x = _context.User.FirstOrDefault();
             return View();
         }
 
@@ -31,6 +27,11 @@ namespace Clinic.Web.Controllers
         {
             ViewData["Message"] = "Your contact page.";
 
+            return View();
+        }
+
+        public IActionResult UserList()
+        {
             return View();
         }
 

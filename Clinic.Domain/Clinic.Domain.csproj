@@ -5,7 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Commands\" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="1.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Clinic.Domain.Model\Clinic.Domain.Model.csproj" />
+    <ProjectReference Include="..\Clinic.ViewModel\Clinic.ViewModel.csproj" />
   </ItemGroup>
 
 </Project>
